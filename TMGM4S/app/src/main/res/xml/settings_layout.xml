@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Notification:">
+
+        <SwitchPreference
+            android:defaultValue="@string/preference_notification_admittance_default_value"
+            android:title="Notification Admittance"
+            android:key="@string/preference_key_notification_admittance" />
+
+        <SwitchPreference
+            android:defaultValue="@string/preference_notification_freezing_default_value"
+            android:title="Freeze Notification"
+            android:key="@string/preference_key_notification_freezing" />
+
+        <RingtonePreference
+            android:defaultValue="@string/preference_alarmtone_default_value"
+            android:title="Tone"
+            android:key="@string/preference_key_alarmtone"
+            android:ringtoneType="notification" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Default Colors:">
+
+        <ListPreference
+            android:title="Background"
+            android:entries="@array/colors_names_preference"
+            android:entryValues="@array/colors_values_preference"
+            android:defaultValue="@string/preference_colorlist_default_task_background_color"
+            android:key="@string/preference_key_colorlist_task_background_color" />
+
+        <ListPreference
+            android:title="Text"
+            android:entries="@array/colors_names_preference"
+            android:entryValues="@array/colors_values_preference"
+            android:defaultValue="@string/preference_colorlist_default_task_text_color"
+            android:key="@string/preference_key_colorlist_task_text_color" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin_left"
+    android:layout_marginRight="@dimen/activity_horizontal_margin_right"
+    android:background="#f9f6f6"
+    android:orientation="vertical"
+    tools:context="com.blogspot.gm4s1.tmgm4s.activities.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:src="@drawable/time_manager2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/task_background" />
+
+        <TextView
+            android:id="@+id/activity_main_textview_today"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_height"
+            android:gravity="center"
+            android:text="TODAY [0]"
+            android:textSize="@dimen/font_size_15"
+            android:textColor="@android:color/holo_red_dark"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/task_background" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/activity_main_listview_tasks_dates"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/activity_main_textview_no_tasks_yet"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="No Tasks Created Yet"
+            android:textSize="@dimen/font_size_15"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/task_background" />
+
+        <TextView
+            android:id="@+id/activity_main_textview_add_new_tasks"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_height"
+            android:gravity="center"
+            android:text="+ ADD NEW TASKS +"
+            android:textColor="@color/task_header_background"
+            android:textSize="@dimen/font_size_15" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

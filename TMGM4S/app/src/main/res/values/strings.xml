@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">TM [GM4S]</string>
+    <string name="app_name_full">Time Manager</string>
+    <string name="app_name_slogan">Control Your Days</string>
+
+    <string name="Settings">Settings</string>
+    <string name="VisitGM4S">Visit GM4S</string>
+    <string name="GM4S_URL">https://m.facebook.com/gm4s1/</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- TODO: Preference items -->
+    <string name="preference_key_notification_admittance">preference_key_notification</string>
+    <string name="preference_notification_admittance_default_value">true</string>
+
+    <string name="preference_key_notification_freezing">preference_key_notification_freezing</string>
+    <string name="preference_notification_freezing_default_value">true</string>
+
+
+    <string name="preference_key_alarmtone">preference_key_alarmtone</string>
+    <string name="preference_alarmtone_default_value">Default</string>
+
+    <string name="preference_key_colorlist_task_background_color">preference_key_colorlist_task_background</string>
+    <string name="preference_colorlist_default_task_background_color">#FFFFFFFF</string>
+
+    <string name="preference_key_colorlist_task_text_color">preference_key_colorlist_task_font_color</string>
+    <string name="preference_colorlist_default_task_text_color">#FF000000</string>
+
+    <string name="preference_key_clearhistory">preference_key_clearhistory</string>
+
+</resources>

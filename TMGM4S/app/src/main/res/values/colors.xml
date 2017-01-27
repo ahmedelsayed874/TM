@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@android:color/holo_red_light</color>
+    <color name="colorPrimaryDark">@android:color/holo_red_light</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="myGrayColor">#d6d7d7</color>
+    <color name="task_background">#fae2e2</color>
+    <color name="task_segment_color">#fffbfb</color>
+    <color name="task_header_background">#f24c4c</color>
+    <color name="task_title_segment_color">#fc6767</color>
+</resources>

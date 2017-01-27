@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_addedittask"
+    tools:context="com.blogspot.gm4s1.tmgm4s.activities.AddEditTaskActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/margin_2"
+    android:layout_marginRight="@dimen/margin_2"
+    android:layout_marginBottom="@dimen/margin_2"
+    android:layout_marginLeft="@dimen/margin_2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="Start Time:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/activity_addedittask_edittext_start_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="time"
+            android:ems="10"
+            android:enabled="false"
+            android:focusable="false"/>
+
+        <TextView
+            android:text="Interval:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/activity_addedittask_edittext_interval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="time"
+            android:ems="10"
+            android:enabled="true"/>
+
+        <TextView
+            android:text="End Time:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/activity_addedittask_edittext_end_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="time"
+            android:ems="10"
+            android:enabled="false"
+            android:focusable="false"/>
+
+        <TextView
+            android:text="Task:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/activity_addedittask_edittext_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/activity_addedittask_textview_task_audio"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:scrollHorizontally="true"
+                android:text="No Audio"/>
+
+            <Button
+                android:id="@+id/activity_addedittask_button_delete_task_audio"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginLeft="@dimen/button_side_margin"
+                android:scaleType="fitXY"
+                android:background="@drawable/trash_black128"/>
+
+            <Button
+                android:id="@+id/activity_addedittask_button_paly_pause_task_audio"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginLeft="@dimen/button_side_margin"
+                android:background="@drawable/play_circle_outline128"/>
+
+            <Button
+                android:id="@+id/activity_addedittask_button_record_task_audio"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginLeft="@dimen/button_side_margin"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/microphone128"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="@dimen/button_side_margin"
+            android:layout_marginRight="@dimen/button_side_margin"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/activity_addedittask_button_task_color"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:shadowColor="@android:color/black"
+                android:shadowDx="1.0"
+                android:shadowDy="1.0"
+                android:background="@android:color/white"
+                android:text="Background Color"/>
+
+            <Button
+                android:id="@+id/activity_addedittask_button_text_color"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:shadowColor="@android:color/black"
+                android:shadowDx="1.0"
+                android:shadowDy="1.0"
+                android:background="@android:color/black"
+                android:text="Text Color"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/activity_addedittask_checkbox_allow_notification"
+            android:text="Allow Notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-3dp"
+            android:checked="false" />
+
+        <TextView
+            android:text="Repeatition:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <RadioButton
+                android:id="@+id/activity_addedittask_radiobtn_every_day"
+                android:text="Every Day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/activity_addedittask_radiobtn_every_week"
+                android:text="Every Week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/activity_addedittask_radiobtn_every_month"
+                android:text="Every Month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/activity_addedittask_radiobtn_every_year"
+                android:text="Every Year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/activity_addedittask_radiobtn_none"
+                android:text="None"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/activity_addedittask_subtasks_textview"
+            android:text="Subtasks:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+        <FrameLayout
+            android:id="@+id/activity_addedittask_framelayout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</ScrollView>

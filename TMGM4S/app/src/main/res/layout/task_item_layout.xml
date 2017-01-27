@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/task_parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/task_item_height"
+    android:background="@color/task_background"
+    android:orientation="horizontal">
+
+    <!-- Task -->
+    <HorizontalScrollView
+        android:id="@+id/task_item_horizontal_scrollview_of_task_textview"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/margin_2"
+        android:layout_marginTop="@dimen/margin_2"
+        android:background="@color/task_segment_color"
+        android:scrollbars="none"
+        android:layoutDirection="rtl"
+        android:longClickable="true">
+
+        <TextView
+            android:id="@+id/task_item_textview_task"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin_2"
+            android:gravity="center"
+            android:text="Task"
+            android:autoLink="all"
+            android:maxLines="1"
+            android:longClickable="true"/>
+
+    </HorizontalScrollView>
+
+    <!-- End Time -->
+    <TextView
+        android:id="@+id/task_item_textview_endtime"
+        android:layout_width="@dimen/task_time_width"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_2"
+        android:layout_marginTop="@dimen/margin_2"
+        android:background="@color/task_segment_color"
+        android:gravity="center"
+        android:text="00:00AM"
+        android:longClickable="true"/>
+
+    <!-- Duration -->
+    <TextView
+        android:id="@+id/task_item_textview_duration"
+        android:layout_width="@dimen/task_time_width"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_2"
+        android:layout_marginTop="@dimen/margin_2"
+        android:background="@color/task_segment_color"
+        android:gravity="center"
+        android:text="00:00"
+        android:longClickable="true"/>
+
+    <!-- Pointer -->
+    <!--//android:id="@+id/task_item_textview_pointer"-->
+    <ImageView
+        android:id="@+id/task_item_imageview_pointer"
+        android:layout_width="@dimen/task_right_margin"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_2"
+        android:layout_marginRight="@dimen/margin_2"
+        android:layout_marginTop="@dimen/margin_2"
+        android:background="@color/task_segment_color"
+        android:gravity="center"
+        android:text=""
+        android:longClickable="true"
+        android:scaleType="center"/>
+
+    <!--
+    <LinearLayout
+        android:id="@+id/task_item_linearlayout_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/task_item_linearlayout_subtasks"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" />
+
+        <TextView
+            android:layout_width="@dimen/task_right_margin"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    -->
+
+</LinearLayout>

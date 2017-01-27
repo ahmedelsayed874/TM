@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.blogspot.gm4s1.tmgm4s">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher1"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activities.MainActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.SetDateTimeActivity"
+            android:label="Set Date and Time"/>
+        <activity
+            android:name=".activities.AddEditTaskActivity"
+            android:label="Edit Task"/>
+        <activity
+            android:name=".settings.Settings"
+            android:label="Settings"/>
+        <activity
+            android:name=".activities.TasksListActivity"
+            android:label="Day Tasks"/>
+
+        <service
+            android:name=".services.TasksScheduler"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name=".services.receivers.TriggerReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <!--<action android:name="android.intent.action.SCREEN_OFF"/>-->
+                <!--<action android:name="android.intent.action.TIME_TICK" />-->
+                <action android:name="com.blogspot.gm4s1.tmgm4s.services.trigger" />
+            </intent-filter>
+        </receiver>
+
+        <receiver
+            android:name=".services.receivers.ResponsiveReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.ALARM_CHANGED" />
+                <action android:name="android.intent.action.TIME_TICK" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

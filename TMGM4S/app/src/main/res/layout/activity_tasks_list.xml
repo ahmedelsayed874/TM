@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.blogspot.gm4s1.tmgm4s.activities.TasksListActivity"
+    android:id="@+id/activity_tasks_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/activity_tasks_list_textview_date_time"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="yyyy-mm-dd hh:mmam"
+        android:textSize="18sp" />
+
+    <FrameLayout
+        android:id="@+id/activity_tasks_list_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"/>
+
+</LinearLayout>

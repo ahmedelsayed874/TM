@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.blogspot.gm4s1.tmgm4s.fragments.TasksListFragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="@color/task_header_background"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginBottom="@dimen/margin_2"
+            android:layout_marginLeft="@dimen/margin_2"
+            android:layout_marginTop="@dimen/margin_2"
+            android:background="@color/task_title_segment_color"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Task" />
+
+        <TextView
+            android:layout_width="@dimen/task_time_width"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin_2"
+            android:layout_marginLeft="@dimen/margin_2"
+            android:layout_marginTop="@dimen/margin_2"
+            android:background="@color/task_title_segment_color"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="End Time" />
+
+        <TextView
+            android:layout_width="@dimen/task_time_width"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin_2"
+            android:layout_marginLeft="@dimen/margin_2"
+            android:layout_marginTop="@dimen/margin_2"
+            android:background="@color/task_title_segment_color"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Duration" />
+
+        <TextView
+            android:layout_width="@dimen/task_right_margin"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin_2"
+            android:layout_marginLeft="@dimen/margin_2"
+            android:layout_marginRight="@dimen/margin_2"
+            android:layout_marginTop="@dimen/margin_2"
+            android:background="@color/task_title_segment_color"
+            android:gravity="center_horizontal|center_vertical" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <ListView
+        android:id="@+id/listview_main_activity"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buttons_region_height">
+
+        <Button
+            android:id="@+id/up_button_main_activity"
+            android:layout_width="@dimen/taskslist_buttons_width"
+            android:layout_height="@dimen/taskslist_buttons_height"
+            android:layout_alignParentLeft="true"
+            android:background="@color/task_title_segment_color"
+            android:layout_marginTop="@dimen/taskslist_buttons_margin"
+            android:layout_marginLeft="@dimen/taskslist_buttons_margin"
+            android:layout_marginBottom="@dimen/taskslist_buttons_margin"
+            android:text="↑"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/down_button_main_activity"
+            android:layout_width="@dimen/taskslist_buttons_width"
+            android:layout_height="@dimen/taskslist_buttons_height"
+            android:layout_toRightOf="@id/up_button_main_activity"
+            android:background="@color/task_title_segment_color"
+            android:layout_margin="@dimen/taskslist_buttons_margin"
+            android:text="↓"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/addnew_button_main_activity"
+            android:layout_width="@dimen/taskslist_buttons_width"
+            android:layout_height="@dimen/taskslist_buttons_height"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="left"
+            android:background="@color/task_title_segment_color"
+            android:layout_margin="@dimen/taskslist_buttons_margin"
+            android:text="New" />
+
+    </RelativeLayout>
+
+</LinearLayout>
